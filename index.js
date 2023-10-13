@@ -1,6 +1,7 @@
-
-
-const n = prompt("enter the number of games");
+let n;
+while(n == ""|| n == null || isNaN(n)){
+    n = prompt("enter the number of games(valid integer)");
+}
 
 const lives = document.querySelector("#lives");
 const playerText = document.querySelector("#playerText");
@@ -8,7 +9,7 @@ const computerText = document.querySelector("#computerText");
 const resultText = document.querySelector("#resultText");
 const choiceBtns = document.querySelectorAll(".choiceBtn");
 const winnerText = document.querySelector("#winner");
-lives.textContent = `GameContent : ${n}`;
+lives.textContent = `Total Games : ${n}`;
 
 let player;
 let computer;
