@@ -1,1 +1,1 @@
-# rockPaperScissor
+# practice project using javascript
